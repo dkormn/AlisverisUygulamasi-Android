@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="0dp"
+    app:strokeColor="#CCCCCC"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/round_outline_rect"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/cart_product_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:lines="2"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_delete_btn"
+            app:layout_constraintStart_toEndOf="@+id/product_image_view"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="some title may be two lines" />
+
+        <ImageButton
+            android:id="@+id/cart_product_delete_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/round_button"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cart_product_title_tv"
+            app:srcCompat="@drawable/ic_delete"
+            app:tint="@color/gray"
+            tools:ignore="UnknownId" />
+
+        <TextView
+            android:id="@+id/cart_product_price_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/cart_product_title_tv"
+            app:layout_constraintStart_toEndOf="@+id/product_image_view"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_delete_btn"
+            tools:text="1234.56 TL" />
+
+        <TextView
+            android:id="@+id/cart_product_size_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/cart_product_price_tv"
+            app:layout_constraintStart_toEndOf="@+id/product_image_view"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_delete_btn"
+            tools:text="Beden: M" />
+
+        <TextView
+            android:id="@+id/cart_product_quantity_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="#000000"
+            app:layout_constraintTop_toBottomOf="@+id/cart_product_size_tv"
+            app:layout_constraintStart_toEndOf="@+id/product_image_view"
+            app:layout_constraintEnd_toStartOf="@+id/cart_product_delete_btn"
+            tools:text="Adet: 1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

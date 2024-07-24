@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#82BCC2"
+    android:padding="8dp"
+    android:gravity="center"
+    tools:context=".BottomMenuFragment">
+
+    <ImageButton
+        android:id="@+id/home_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_home"
+        android:layout_weight="1"
+        android:contentDescription="@string/account_icon" />
+
+    <ImageButton
+        android:id="@+id/favorites_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_favorites"
+        android:layout_weight="1"
+        android:contentDescription="@string/pro_details_like_btn_desc" />
+
+    <ImageButton
+        android:id="@+id/cart_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_cart"
+        android:layout_weight="1"
+        android:contentDescription="@string/ic_shopping_bag" />
+
+    <ImageButton
+        android:id="@+id/account_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/ic_account"
+        android:layout_weight="1"
+        android:contentDescription="@string/account_icon" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Aksam</string>
+    <string name="notifications">Notifications</string>
+    <string name="notification_bell">Bildirim Çanı</string>
+    <string name="account_icon">Hesap Simgesi</string>
+    <string name="success_icon">Başarı Simgesi</string>
+    <string name="logout_button_text">Çıkış Yap</string>
+    <string name="shopping_bag_icon">Alışveriş Çantası İkonu</string>
+    <string name="pro_details_like_btn_desc">Like Button</string>
+    <string name="ic_shopping_bag">Alışveriş Çantası İkonu</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="size_array">
+        <item>XS</item>
+        <item>S</item>
+        <item>M</item>
+        <item>L</item>
+        <item>XL</item>
+    </string-array>
+
+</resources>
